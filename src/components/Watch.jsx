@@ -2,6 +2,7 @@ import React from "react";
 import { useSearchParams } from "react-router-dom";
 import CommentsList from "./CommentsList";
 import { commentsData } from "../utils/apiConstants";
+import LiveChat from "./LiveChat";
 
 const Watch = () => {
   const [searchParams] = useSearchParams();
@@ -29,10 +30,11 @@ const Watch = () => {
           ))}
         </div>
       </div>
-      <div className="w-4/12 mx-5 h-auto bg-gray-100 shadow-lg rounded-md">
-        <h1 className="items-center py-10 font-thin text-center text-3xl">
-          Playlist Videos
-        </h1>
+      <div className="w-4/12 my-2 mx-5 h-auto bg-gray-100 shadow-lg rounded-md">
+        <h1 className="py-2 px-2 font-thin text-2xl">Live Chat</h1>
+        <div>
+          <LiveChat/>
+        </div>
       </div>
     </>
   );

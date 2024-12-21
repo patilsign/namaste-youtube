@@ -2,7 +2,6 @@ import React from "react";
 import CommentsList from "./CommentsList";
 
 const Comments = ({ info }) => {
-  console.log(info, "comments 222222222");
   const { name, comment, replys } = info;
   return (
     <div className="m-1 px-10 rounded-md shadow-md flex  bg-gray-100 border-black">

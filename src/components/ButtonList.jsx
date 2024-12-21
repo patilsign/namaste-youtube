@@ -5,8 +5,8 @@ import ButtonBlock from "./ButtonBlock";
 const ButtonList = () => {
   return (
     <div className="flex px-2 py-4 shadow-sm">
-      {BTN_SUGGESSIONS_LIST.map((info) => (
-        <ButtonBlock name={info} />
+      {BTN_SUGGESSIONS_LIST.map((info,index) => (
+        <ButtonBlock key={index} name={info} />
       ))}
     </div>
   );
